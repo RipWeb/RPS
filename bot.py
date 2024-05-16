@@ -24,4 +24,5 @@ ADMINS = [913750670, 767488330]
 
 bot = Bot(TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML, link_preview_is_disabled=True))
 dp = Dispatcher()
+
 dp.message.outer_middleware(SomeMiddleware())
